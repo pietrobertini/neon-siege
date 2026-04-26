@@ -114,14 +114,33 @@ Level clear: 2.2-second splash, then spawn next level with higher enemy count.
 
 ## Git Workflow
 
-All changes committed locally with clean messages, then pushed to GitHub:
+**IMPORTANT: Commit and push to GitHub regularly after completing work.**
+
+This ensures all progress is saved, prevents loss of work, and allows easy rollback if needed.
+
+After completing a feature, fix, or significant change:
 ```bash
 git add <file>
-git commit -m "Clear description"
+git commit -m "Clear, descriptive message"
 git push
 ```
 
+**Commit message guidelines:**
+- Lead with what was changed (verb form): "Add", "Fix", "Update", "Refactor"
+- Explain the **why** if non-obvious
+- Keep first line under 70 characters
+- Use imperative mood (e.g., "Add player health system" not "Added player health system")
+
+**Examples:**
+```bash
+git commit -m "Add Tank enemy type with 3 HP and slow speed"
+git commit -m "Fix bullet collision detection radius"
+git commit -m "Increase enemy spawn rate and difficulty scaling per level"
+```
+
 Repository: https://github.com/pietrobertini/neon-siege
+
+**Always push after committing** to ensure the remote copy stays up-to-date with local work.
 
 ## Notes
 
